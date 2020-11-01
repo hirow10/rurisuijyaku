@@ -23,13 +23,6 @@ ul {
   /* position: fixed; */
 }
 
-ul li {
-  /* margin-left: 15px; */
-}
-
-.score {
-  /* margin-left: 15px; */
-}
 
 #timer {
   margin-right: 15px;
@@ -41,35 +34,4 @@ ul li {
   flex-wrap: wrap;
   justify-content: space-evenly;
   /* align-content: stretch; */
-}
-
-img {
-  width: 100px;
-  height: 177.91px;
-  /* height: auto; */
-  background-color: azure;
-  margin-bottom: 15px;
-  border: 2px solid #ccc;
-  border-radius: 7px;
-  cursor: pointer;
-  /* user-select: none; */
-}
-
-img:hover {
-  /* background-color: gold; */
-  /* top: 100%;
-  opacity: 0; */
-}
-
-img:active {
-  /* top: 100%; */
-  /* box-shadow: 0 5px 0 #8e8c8f; */
-  /* transition: 1.4s ease-in-out; */
-}
-
-.omote {
-  /* opacity: 0.3; */
-  /* z-index: 1; */
-  /* transform: rotateX(0deg); */
-  /* transform: rotateY(0deg); */
 }
