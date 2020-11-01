@@ -23,7 +23,6 @@ ul {
   /* position: fixed; */
 }
 
-
 #timer {
   margin-right: 15px;
 }
@@ -34,4 +33,15 @@ ul {
   flex-wrap: wrap;
   justify-content: space-evenly;
   /* align-content: stretch; */
+}
+
+img {
+  width: 100px;
+  height: 177.91px;
+  background-color: azure;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+  cursor: pointer;
+  /* user-select: none; */
 }

@@ -14,13 +14,3 @@
   }
 }
 
-img {
-  width: 100px;
-  height: 177.91px;
-  background-color: azure;
-  margin-bottom: 15px;
-  border: 2px solid #ccc;
-  border-radius: 7px;
-  cursor: pointer;
-  /* user-select: none; */
-}
