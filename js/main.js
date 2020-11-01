@@ -137,7 +137,7 @@
         cards[optionTwoId].setAttribute('src', 'images/click.png');
         cards[optionOneId].classList.remove('ura');
         cards[optionTwoId].classList.remove('ura');
-        setTimeout(alert('ちゃうで！'), 300);
+        setTimeout(alert('ちゃうで！'), 500);
         // alert('ちゃうで！');
       }
       cardsChosen = [];
