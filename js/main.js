@@ -107,8 +107,8 @@
         card.setAttribute('src', 'images/click.png');
         card.setAttribute('data-id', i);
         // card.classList.add('omote')
-        // card.addEventListener('click', flipCard);
-        setTimeout(card.addEventListener('click', flipCard),200);
+        card.addEventListener('click', flipCard);
+        // setTimeout(card.addEventListener('click', flipCard),200);
         grid.appendChild(card);
       }
     }
@@ -122,9 +122,9 @@
       if (optionOneId == optionTwoId) {
         cards[optionOneId].setAttribute('src', 'images/click.png');
         cards[optionTwoId].setAttribute('src', 'images/click.png');
+        setTimeout(alert('連打はアカン！'), 300);
         cards[optionOneId].classList.remove('ura');
         cards[optionTwoId].classList.remove('ura');
-        setTimeout(alert('連打はアカン！'), 300);
         // alert('連打はアカン！');
       }
       else if (cardsChosen[0] === cardsChosen[1]) {
@@ -136,9 +136,9 @@
       } else {
         cards[optionOneId].setAttribute('src', 'images/click.png');
         cards[optionTwoId].setAttribute('src', 'images/click.png');
+        setTimeout(alert('ちゃうで！'), 400);
         cards[optionOneId].classList.remove('ura');
         cards[optionTwoId].classList.remove('ura');
-        setTimeout(alert('ちゃうで！'), 400);
         // alert('ちゃうで！');
       }
       cardsChosen = [];
