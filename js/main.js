@@ -107,8 +107,8 @@
         card.setAttribute('src', 'images/click.png');
         card.setAttribute('data-id', i);
         // card.classList.add('omote')
-        card.addEventListener('click', flipCard);
-        // setTimeout(card.addEventListener('click', flipCard),200);
+        // card.addEventListener('click', flipCard);
+        setTimeout(card.addEventListener('click', flipCard), 300);
         grid.appendChild(card);
       }
     }
@@ -122,7 +122,7 @@
       if (optionOneId == optionTwoId) {
         cards[optionOneId].setAttribute('src', 'images/click.png');
         cards[optionTwoId].setAttribute('src', 'images/click.png');
-        setTimeout(alert('連打はアカン！'), 300);
+        setTimeout(alert('連打はアカン！'), 200);
         cards[optionOneId].classList.remove('ura');
         cards[optionTwoId].classList.remove('ura');
         // alert('連打はアカン！');
@@ -136,7 +136,7 @@
       } else {
         cards[optionOneId].setAttribute('src', 'images/click.png');
         cards[optionTwoId].setAttribute('src', 'images/click.png');
-        setTimeout(alert('ちゃうで！'), 400);
+        setTimeout(alert('ちゃうで！'), 200);
         cards[optionOneId].classList.remove('ura');
         cards[optionTwoId].classList.remove('ura');
         // alert('ちゃうで！');
