@@ -107,8 +107,8 @@
         card.setAttribute('src', 'images/click.png');
         card.setAttribute('data-id', i);
         // card.classList.add('omote')
-        // card.addEventListener('click', flipCard);
-        setTimeout(card.addEventListener('click', flipCard), 500);
+        card.addEventListener('click', flipCard);
+        // setTimeout(card.addEventListener('click', flipCard), 500);
         grid.appendChild(card);
       }
     }
