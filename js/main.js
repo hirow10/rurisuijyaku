@@ -107,7 +107,8 @@
         card.setAttribute('src', 'images/click.png');
         card.setAttribute('data-id', i);
         // card.classList.add('omote')
-        card.addEventListener('click', flipCard);
+        // card.addEventListener('click', flipCard);
+        setTimeout(card.addEventListener('click', flipCard),200);
         grid.appendChild(card);
       }
     }
@@ -137,7 +138,7 @@
         cards[optionTwoId].setAttribute('src', 'images/click.png');
         cards[optionOneId].classList.remove('ura');
         cards[optionTwoId].classList.remove('ura');
-        setTimeout(alert('ちゃうで！'), 500);
+        setTimeout(alert('ちゃうで！'), 400);
         // alert('ちゃうで！');
       }
       cardsChosen = [];
