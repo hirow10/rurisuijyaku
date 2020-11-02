@@ -107,8 +107,8 @@
         card.setAttribute('src', 'images/click.png');
         card.setAttribute('data-id', i);
         // card.classList.add('omote')
-        card.addEventListener('click', flipCard);
-        // setTimeout(card.addEventListener('click', flipCard), 300);
+        // card.addEventListener('click', flipCard);
+        setTimeout(card.addEventListener('click', flipCard), 500);
         grid.appendChild(card);
       }
     }
@@ -167,7 +167,7 @@
       this.classList.add('ura');
       // console.log('ura');
       if (cardsChosen.length === 2) {
-        setTimeout(checkForMatch, 600);
+        setTimeout(checkForMatch, 500);
       }
     }
 
