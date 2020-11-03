@@ -1,20 +1,22 @@
 .ura {
-  animation-name: roll;
+  /* animation-name: roll;
   animation-duration: 0.1s;
   animation-delay: 0.0s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in; */
+  /* box-shadow: 0 4px 0 #bbb; */
 }
 
-@keyframes roll {
+.ura:active {
+  /* box-shadow: none;
+  position: relative;
+  top: 7px; */
+}
+
+  /* @keyframes roll {
   0% {
     transform: rotateY(0deg);
   }
   100% {
     transform: rotateY(360deg);
   }
-}
-
-#message {
-  font-size: 20px;
-  font-weight: bold;
-}
+} */
