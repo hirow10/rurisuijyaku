@@ -99,12 +99,14 @@
     // let optionTwoId;
     let cardA;
     let cardB;
-    let cardsWonLengthCount = 0;
+    let previousCardsWonLengthCount = 0;
 
     // const open = document.getElementById('open');
     const close = document.getElementById('close');
     const modal = document.getElementById('modal');
     const mask = document.getElementById('mask');
+    const message = document.getElementById('message');
+    // const close = document.getElementById('close');
 
     const timer = document.getElementById('timer');
     let startTime;
@@ -201,7 +203,7 @@
       this.classList.add('ura');
 
       if (cardsChosen.length === 2) {
-        setTimeout(checkForMatch, 500);
+        setTimeout(checkForMatch, 700);
       }
     }
 
@@ -232,7 +234,7 @@
     function modalMsg(msg) {
       mask.classList.remove('hidden');
       modal.classList.remove('hidden');
-      modal.textContent = msg;
+      message.textContent = msg;
       // close.textContent = '閉じる';
     }
 
@@ -249,11 +251,11 @@
     mask.addEventListener('click', () => {
       // turnItOver(cards[optionOneId], cards[optionTwoId]);
       close.click();
-      console.log(cardsWon.length);
+      // console.log(cardsWon.length);
       // turnItOver(x, y);
       // turnItOver(cards[optionOneId], cards[optionTwoId]);
-      if (cardsWon.length === cardsWonLengthCount + 1) {
-        cardsWonLengthCount++;
+      if (cardsWon.length === previousCardsWonLengthCount + 1) {
+        previousCardsWonLengthCount++;
       } else {
         turnItOver(cardA, cardB);
       }
